@@ -10,10 +10,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 # Inherit from iceland device
 $(call inherit-product, device/oneplus/iceland/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
+# Inherit some common bliss stuff.
+$(call inherit-product, vendor/bliss/config/common_full_tablet_wifionly.mk)
 
-PRODUCT_NAME := lineage_iceland
+PRODUCT_NAME := bliss_iceland
 PRODUCT_DEVICE := iceland
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus

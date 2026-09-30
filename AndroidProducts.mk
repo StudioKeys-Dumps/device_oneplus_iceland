@@ -4,4 +4,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_iceland.mk
+    $(LOCAL_DIR)/bliss_iceland.mk
