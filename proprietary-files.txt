@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus Pad 4 (OPD2514_16.0.9.401(EX01)).
+## are from OnePlus Pad 4 (OPD2514_16.0.10.501(EX01)).
 
 # ACDB
 odm/etc/acdbdata/FTM/acdb_cal.acdb
