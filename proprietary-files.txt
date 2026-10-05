@@ -1578,7 +1578,7 @@ odm/etc/display/qdcm_calib_data_XN251_p_d_dsc_video_mode_panel.json
 # Dolby Vision
 odm/etc/dolby/display/dolby_vision.cfg
 odm/etc/dolby/dolby_vision.cfg
-odm/etc/media_codecs_dolby_vision.xml
+odm/etc/media_codecs_dolby_vision.xml:vendor/etc/media_codecs_dolby_vision.xml
 odm/lib64/libdolbyclstc.so
 
 # DSP modules
