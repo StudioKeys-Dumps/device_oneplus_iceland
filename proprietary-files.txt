@@ -1574,6 +1574,7 @@ odm/etc/PanelChaplin/XN251_p_d_dsc_video_mode_panel_game_color_enhance_Vivid_100
 odm/etc/PanelChaplin/XN251_p_d_dsc_video_mode_panel_game_color_enhance_Vivid_2nits_pGC.txt
 odm/etc/PanelChaplin/XN251_p_d_dsc_video_mode_panel_game_color_enhance_Vivid_pGC.txt
 odm/etc/display/qdcm_calib_data_XN251_p_d_dsc_video_mode_panel.json
+vendor/etc/displayconfig/display_id_4630946850534658451.xml:vendor/etc/displayconfig/display_id_4630947217761632659.xml
 
 # Dolby Vision
 odm/bin/hw/dvs-aidl-service
