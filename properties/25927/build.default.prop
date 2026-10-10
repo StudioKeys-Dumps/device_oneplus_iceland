@@ -7,5 +7,10 @@ ro.product.odm.model=OPD2513
 ro.product.odm.name=OPD2513
 ro.vendor.oplus.regionmark=CN
 
+# Key attestation
+ro.product.device_for_attestation=OP6547L1
+ro.product.model_for_attestation=OPD2513
+ro.product.name_for_attestation=OPD2513
+
 # USB
 vendor.usb.product_string=OnePlus Pad 3 Pro

@@ -1,3 +1,6 @@
 # Device info
 ro.product.odm.name=OPD2514IN
 ro.vendor.oplus.regionmark=IN
+
+# Key attestation
+ro.product.name_for_attestation=OPD2514IN

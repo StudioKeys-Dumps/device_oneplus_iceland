@@ -2,3 +2,6 @@
 ro.product.odm.model=OPD2514
 ro.product.odm.name=OPD2514EEA
 ro.vendor.oplus.regionmark=EUEX
+
+# Key attestation
+ro.product.name_for_attestation=OPD2514EEA
