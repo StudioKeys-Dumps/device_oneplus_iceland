@@ -1516,8 +1516,11 @@ vendor/firmware/CAMERA_ICP_170.elf
 
 # Charger firmware
 odm/firmware/fastchg/25978/charging_hyper_mode_config.txt
-odm/firmware/fastchg/25978/charging_hyper_mode_config.txt:odm/firmware/fastchg/25927/charging_hyper_mode_config.txt
 odm/firmware/fastchg/charging_thermal_config_default.txt
+
+# Charger firmware - from OnePlus Pad 3 Pro (OPD2513_16.0.10.500(CN01))
+odm/firmware/fastchg/25927/charging_hyper_mode_config.txt|ae50e7a34e83971aa9073d321752bbacc80ab75e
+odm/firmware/fastchg/charging_thermal_config_default.txt:odm/firmware/fastchg/25927/charging_thermal_config_default.txt|f99394c427a866c15c1e656c2e4b6ef01b90114a
 
 # Display calibration data
 odm/etc/display/qdcm_calib_data_XN251_p_d_dsc_video_mode_panel.json
