@@ -46,6 +46,8 @@ blob_fixups: blob_fixups_user_type = {
         .binary_regex_replace(b'vendor.oplus.caihong.serialno', b'ro.boot.chipid' + 15 * b'\x00'),
     'odm/etc/init/init.camera_process.rc': blob_fixup()
         .regex_replace('    delete_recursion', '    #delete_recursion'),
+    'odm/etc/sensor/sensor_config.json': blob_fixup()
+        .regex_replace(r'(?s)("25978":)(\{.*\})(\s*\}\s*)$', r'\1\2,\r\n    "25927":\2\3'),
     (
         'odm/lib64/libAlgoProcess.so',
         'odm/lib64/libEIS.so',
