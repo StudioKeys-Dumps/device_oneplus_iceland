@@ -48,6 +48,8 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('    delete_recursion', '    #delete_recursion'),
     'odm/etc/sensor/sensor_config.json': blob_fixup()
         .regex_replace(r'(?s)("25978":)(\{.*\})(\s*\}\s*)$', r'\1\2,\r\n    "25927":\2\3'),
+    'odm/lib64/soundfx/libOplusSpatializerAidl.so': blob_fixup()
+        .add_needed('libbase.so'),
     (
         'odm/lib64/libAlgoProcess.so',
         'odm/lib64/libEIS.so',
