@@ -49,7 +49,11 @@ blob_fixups: blob_fixups_user_type = {
     'odm/etc/sensor/sensor_config.json': blob_fixup()
         .regex_replace(r'(?s)("25978":)(\{.*\})(\s*\}\s*)$', r'\1\2,\r\n    "25927":\2\3'),
     'odm/lib64/soundfx/libOplusSpatializerAidl.so': blob_fixup()
-        .add_needed('libbase.so'),
+        .add_needed('libbase.so')
+        .binary_regex_replace(
+            b'\x48\x00\x80\x52\x69\x02\x00\xf9\x68\\\x5e\x01\xb9',
+            b'\x08\x00\x80\x52\x69\x02\x00\xf9\x68\x5e\x01\xb9',
+        ),
     (
         'odm/lib64/libAlgoProcess.so',
         'odm/lib64/libEIS.so',
