@@ -49,7 +49,8 @@ blob_fixups: blob_fixups_user_type = {
     'odm/etc/sensor/sensor_config.json': blob_fixup()
         .regex_replace(r'(?s)("25978":)(\{.*\})(\s*\}\s*)$', r'\1\2,\r\n    "25927":\2\3'),
     'odm/lib64/soundfx/libOplusSpatializerAidl.so': blob_fixup()
-        .add_needed('libbase.so'),
+        .add_needed('libbase.so')
+        .patch_file('blob-patches/libOplusSpatializerAidl.py'),
     (
         'odm/lib64/libAlgoProcess.so',
         'odm/lib64/libEIS.so',
@@ -78,11 +79,13 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('rpcmem_to_fd'),
     'odm/lib64/libAlgoProcess.so': blob_fixup()
         .replace_needed('android.hardware.graphics.common-V5-ndk.so', 'android.hardware.graphics.common-V7-ndk.so'),
-    (
-        'vendor/lib64/camera/components/com.qti.node.dewarp.so',
-        'vendor/lib64/vendor.qti.hardware.camera.offlinecamera-service-impl.so',
-    ): blob_fixup()
+    'odm/vendor/etc/wifi/WCNSS_qcom_cfg.ini': blob_fixup()
+        .regex_replace(r'(wlm_latency_flags_ultralow =)0x180d83', r'\g<1>0x180c82'),
+    'vendor/lib64/camera/components/com.qti.node.dewarp.so': blob_fixup()
         .replace_needed('android.hardware.graphics.allocator-V1-ndk.so', 'android.hardware.graphics.allocator-V2-ndk.so'),
+    'vendor/lib64/vendor.qti.hardware.camera.offlinecamera-service-impl.so': blob_fixup()
+        .replace_needed('android.hardware.graphics.allocator-V1-ndk.so', 'android.hardware.graphics.allocator-V2-ndk.so')
+        .replace_needed('vendor.qti.hardware.camera.offlinecamera-V2-ndk.so', 'vendor.qti.hardware.camera.offlinecamera-V3-ndk.so'),
     'odm/lib64/libocam_hmbird.so': blob_fixup()
         .replace_needed('libosensenativeproxy_client.so', 'libosensenativeproxy_client_iceland.so'),
     (
