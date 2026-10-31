@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus Pad 4 (OPD2514_16.0.10.501(EX01)).
+## are from OnePlus Pad 4 (OPD2514_17.0.0.101(EX01)).
 
 abl.img;AB
 aop.img;AB
