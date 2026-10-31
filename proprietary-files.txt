@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus Pad 4 (OPD2514_16.0.10.501(EX01)).
+## are from OnePlus Pad 4 (OPD2514_17.0.0.101(EX01)).
 
 # ACDB
 odm/etc/acdbdata/FTM/acdb_cal.acdb
@@ -822,7 +822,9 @@ odm/etc/camera/Vega_Detect_AnimalBodyFaceEye_Gray.model
 odm/etc/camera/Vega_Detect_BodyHead_Gray.model
 odm/etc/camera/Vega_Detect_CommonFace_BGR.model
 odm/etc/camera/Vega_Detect_CommonFace_BGR_PZ.model
+odm/etc/camera/Vega_Detect_Head_BGR.model
 odm/etc/camera/Vega_Front_Align_occlusion.model
+odm/etc/camera/Vega_Refine_Head.model
 odm/etc/camera/Vega_Refine_RectQuality_AllAnimalBodyFaceEye_BGR.model
 odm/etc/camera/Vega_Refine_RectQuality_AnimalBodyFaceEye.model
 odm/etc/camera/Vega_Refine_RectQuality_AnimalBodyFaceEye_BGR.model
@@ -830,6 +832,7 @@ odm/etc/camera/Vega_Refine_RectQuality_HumanBodyFaceEye_Gray.model
 odm/etc/camera/Vega_Track_AnimalsBodyFaceEye_Gray.model
 odm/etc/camera/Vega_Track_FaceRect20cls.model
 odm/etc/camera/Vega_Track_FaceRect20cls_snap.model
+odm/etc/camera/Vega_Track_Head_Gray.model
 odm/etc/camera/Vega_Track_HumanBody_Gray.model
 odm/etc/camera/aiboost_qnn_htp2.7.2_16382673562495086299.bin
 odm/etc/camera/aiboost_qnn_htp2.7.2_828413902960689361.bin
@@ -1334,7 +1337,12 @@ vendor/lib64/camera/lafafront_4.pb
 vendor/lib64/camera/lighthousefront_1.pb
 vendor/lib64/camera/macanExFront_4.pb
 vendor/lib64/camera/macanFront_4.pb
+vendor/lib64/camera/mariofront_3.pb
 vendor/lib64/camera/qfdserviceconfig.bin
+vendor/lib64/camera/redalertfront_3.pb
+vendor/lib64/camera/starcraftExFront_4.pb
+vendor/lib64/camera/starcraftFront_4.pb
+vendor/lib64/camera/starcraftrfront_4.pb
 vendor/lib64/camera/swangoosefrontmain_3.pb
 vendor/lib64/camera/swangoosefrontsub_4.pb
 vendor/lib64/camera/u9bfront_4.pb
@@ -1699,6 +1707,7 @@ odm/lib64/aiframe/libQnnHtp.so;MODULE_SUFFIX=.aiframe
 odm/lib64/aiframe/libQnnHtpPrepare.so;MODULE_SUFFIX=.aiframe
 odm/lib64/aiframe/libQnnHtpV81Stub.so;MODULE_SUFFIX=.aiframe
 odm/lib64/aiframe/libQnnSystem.so;MODULE_SUFFIX=.aiframe
+odm/lib64/aiframe/libaiboost_litert.so
 odm/lib64/aiframe/libaiboost_qnn_external_delegate.so;MODULE_SUFFIX=.aiframe;FIX_SONAME
 odm/lib64/aiframe/libqcom_llm.so
 odm/lib64/aiframe/libtransformer_lite.so
@@ -1749,7 +1758,7 @@ odm/etc/init/init.nvram.rc
 odm/lib64/libnvram.so
 
 # OSENSE
-odm/lib64/libosensenativeproxy_client.so:odm/lib64/libosensenativeproxy_client_iceland.so;FIX_SONAME
+vendor/lib64/libosensenativeproxy_client.so:odm/lib64/libosensenativeproxy_client_iceland.so;FIX_SONAME
 
 # Pogo pin keyboard
 odm/bin/hw/vendor.oplus.hardware.pogo_keyboard-service

@@ -26,8 +26,8 @@ GAPPS_ARCH := arm64
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="qssi_64-user 16 BP2A.250605.015 1785852178639 release-keys" \
-    BuildFingerprint=OnePlus/OPD2514IN/OP657AL1:16/BP2A.250605.015/B.R4T3.3cd1bf3-17b9069-17b4b68:user/release-keys \
+    BuildDesc="qssi_64-user 17 CP2A.260605.016 1792304236194 release-keys" \
+    BuildFingerprint=OnePlus/OPD2514IN/OP657AL1:17/CP2A.260605.016/B.R4T3.1649ec3_1035f4f_102d221:user/release-keys \
     DeviceName=OP657AL1 \
     DeviceProduct=OPD2514 \
     SystemDevice=OP657AL1 \
