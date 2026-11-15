@@ -1,2 +1,16 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
 on boot
     write /proc/touchpanel/touch_scene_para "mod para_effect pen_sensitive_level:254"
+
+# Display
+on property:persist.sys.sf.native_mode=301
+    write /sys/kernel/oplus_display/seed 101
+on property:persist.sys.sf.native_mode=303
+    write /sys/kernel/oplus_display/seed 102
+on property:persist.sys.sf.native_mode=307
+    write /sys/kernel/oplus_display/seed 100
+
