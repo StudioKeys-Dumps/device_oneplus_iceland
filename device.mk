@@ -81,7 +81,8 @@ PRODUCT_COPY_FILES += \
 
 # Wireless pen
 PRODUCT_PACKAGES += \
-    OplusPen
+    OplusPen \
+    vendor.lineage.accessories-service.oplus
 
 # Inherit from the common OEM chipset makefile.
 $(call inherit-product, device/oneplus/sm8850-common/common.mk)
